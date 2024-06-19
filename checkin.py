@@ -24,10 +24,10 @@ try:
 
     # 找到帳號輸入框並輸入帳號
     username_input = driver.find_element(By.XPATH, '//*[@id="UID"]')  # 確保替換為實際的 input 標籤名稱或 ID
-    username_input.send_keys('00897554')  # 替換為實際的帳號
+    username_input.send_keys('帳號')  # 替換為實際的帳號
     # 找到密碼輸入框並輸入密碼
     password_input = driver.find_element(By.XPATH, '//*[@id="KEY"]')  # 確保替換為實際的 input 標籤名稱或 ID
-    password_value = "#K880322"  # 替換為實際的密碼
+    password_value = "密碼"  # 替換為實際的密碼
     driver.execute_script("arguments[0].value = arguments[1];", password_input, password_value)
     time.sleep(3)
     # 找到登錄按鈕並點擊
